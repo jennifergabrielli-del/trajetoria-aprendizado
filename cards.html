@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personagens — Jennifer & Marina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <a class="logo" href="index.html">★ TRAJETÓRIA</a>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a class="active" href="cards.html">Personagens</a>
+    <a href="trajetoria.html">Níveis</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <div class="section-title">
+    <p>★ SELEÇÃO DE PERSONAGENS ★</p>
+    <h1>Conheça as protagonistas</h1>
+    <span>Duas alunas, uma trajetória e muitos desafios pela frente.</span>
+  </div>
+
+  <section class="character-grid">
+
+    <!-- JENNIFER -->
+    <article class="character-card">
+
+      <div class="card-top jennifer">
+        <img src="img/jennifer.jpeg" alt="Foto de Jennifer">
+        <div class="coin">★</div>
+      </div>
+
+      <div class="card-body">
+
+        <p class="tag">PERSONAGEM 01</p>
+
+        <h2>Jennifer Gabrielli</h2>
+
+        <p>
+          Uma das protagonistas desta trajetória, sempre buscando
+          aprender, evoluir e superar cada novo desafio.
+        </p>
+
+        <ul>
+          <li>✦ Foco</li>
+          <li>✦ Determinação</li>
+          <li>✦ Criatividade</li>
+        </ul>
+
+        <button class="pixel-btn small open-modal"
+        data-character="jennifer">
+          VER PERFIL
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- MARINA -->
+    <article class="character-card">
+
+      <div class="card-top marina">
+        <img src="img/marina.jpeg" alt="Foto de Marina">
+        <div class="coin">★</div>
+      </div>
+
+      <div class="card-body">
+
+        <p class="tag">PERSONAGEM 02</p>
+
+        <h2>Marina Melo</h2>
+
+        <p>
+          Uma das protagonistas da aventura, construindo sua trajetória
+          através de experiências, aprendizados e novos objetivos.
+        </p>
+
+        <ul>
+          <li>✦ Coragem</li>
+          <li>✦ Aprendizado</li>
+          <li>✦ Objetivos</li>
+        </ul>
+
+        <button class="pixel-btn small open-modal"
+        data-character="marina">
+          VER PERFIL
+        </button>
+
+      </div>
+
+    </article>
+
+  </section>
+
+  <div class="tip-box">
+    💡 Clique em “VER PERFIL” para conhecer melhor cada personagem.
+  </div>
+
+</main>
+
+
+<!-- JANELA DO PERFIL -->
+<div class="modal" id="profileModal">
+
+  <div class="modal-box">
+
+    <button class="close-modal">×</button>
+
+    <p class="tag" id="modalTag"></p>
+
+    <h2 id="modalName"></h2>
+
+    <p id="modalText"></p>
+
+    <div class="stats">
+
+      <div>
+        <b>★</b>
+        <span>Força</span>
+        <i></i>
+      </div>
+
+      <div>
+        <b>★</b>
+        <span>Foco</span>
+        <i></i>
+      </div>
+
+      <div>
+        <b>★</b>
+        <span>Sonhos</span>
+        <i></i>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<footer>
+  © 2026 Jennifer Gabrielli & Marina Melo · Projeto de trajetória
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Níveis — Trajetória</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+  <a class="logo" href="index.html">
+    ★ TRAJETÓRIA
+  </a>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="cards.html">Personagens</a>
+    <a class="active" href="trajetoria.html">Níveis</a>
+  </nav>
+
+</header>
+
+
+<main class="page level-page">
+
+  <div class="section-title">
+
+    <p>★ MAPA DA AVENTURA ★</p>
+
+    <h1>Nossa trajetória na Web</h1>
+
+    <span>
+      Cada nível representa uma etapa da nossa aprendizagem.
+    </span>
+
+  </div>
+
+
+  <section class="level-map">
+
+    <div class="map-line"></div>
+
+
+    <!-- NÍVEL 01 -->
+
+    <article class="level unlocked">
+
+      <div class="level-number">
+        01
+      </div>
+
+      <div class="level-content">
+
+        <p>NÍVEL 01</p>
+
+        <h2>Fundamentos HTML</h2>
+
+        <span>
+          Estruturas básicas e semântica.
+          Aprendemos a criar a base das páginas
+          e organizar seus conteúdos.
+        </span>
+
+        <button class="level-btn" data-level="1" onclick="window.open('https://www.w3schools.com/html/', '_blank')">
+          ENTRAR
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- NÍVEL 02 -->
+
+    <article class="level unlocked">
+
+      <div class="level-number">
+        02
+      </div>
+
+      <div class="level-content">
+
+        <p>NÍVEL 02</p>
+
+        <h2>Estilização CSS</h2>
+
+        <span>
+          Layout, cores e tipografia.
+          É aqui que aprendemos a transformar
+          páginas simples em interfaces bonitas.
+        </span>
+
+        <button class="level-btn" data-level="2" onclick="window.open('https://www.w3schools.com/css/', '_blank')">
+          ENTRAR
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- NÍVEL 03 -->
+
+    <article class="level unlocked">
+
+      <div class="level-number">
+        03
+      </div>
+
+      <div class="level-content">
+
+        <p>NÍVEL 03</p>
+
+        <h2>JavaScript Essencial</h2>
+
+        <span>
+          Interatividade e manipulação DOM.
+          Aprendemos a fazer a página responder
+          às ações do usuário.
+        </span>
+
+        <button class="level-btn" data-level="3" onclick="window.open('https://www.w3schools.com/js/', '_blank')">
+          ENTRAR
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- NÍVEL 04 -->
+
+    <article class="level unlocked">
+
+      <div class="level-number">
+        04
+      </div>
+
+      <div class="level-content">
+
+        <p>NÍVEL 04</p>
+
+        <h2>Design Responsivo</h2>
+
+        <span>
+          Adaptabilidade multi-dispositivo.
+          O site precisa funcionar bem em celulares,
+          tablets e computadores.
+        </span>
+
+        <button class="level-btn" data-level="4" onclick="window.open('https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML', '_blank')">
+          ENTRAR
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- NÍVEL 05 -->
+
+    <article class="level unlocked">
+
+      <div class="level-number">
+        05
+      </div>
+
+      <div class="level-content">
+
+        <p>NÍVEL 05</p>
+
+        <h2>Acessibilidade Web</h2>
+
+        <span>
+          Inclusão e boas práticas.
+          Uma página deve ser pensada para
+          diferentes pessoas e necessidades.
+        </span>
+
+        <button class="level-btn" data-level="5">
+          ENTRAR
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- NÍVEL 06 -->
+
+    <article class="level final-level">
+
+      <div class="level-number">
+        06
+      </div>
+
+      <div class="level-content">
+
+        <p>NÍVEL FINAL</p>
+
+        <h2>Otimização Performance</h2>
+
+        <span>
+          Velocidade e eficiência.
+          A última fase busca deixar o site
+          rápido, eficiente e agradável.
+        </span>
+
+        <button class="level-btn" data-level="6">
+          ENTRAR
+        </button>
+
+      </div>
+
+    </article>
+
+  </section>
+
+
+  <div class="progress-wrap">
+
+    <div class="progress-label">
+
+      <span>
+        PROGRESSO DA AVENTURA
+      </span>
+
+      <b id="progressText">
+        0%
+      </b>
+
+    </div>
+
+    <div class="progress">
+
+      <div id="progressBar"></div>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<!-- MODAL DOS NÍVEIS -->
+
+<div class="level-modal modal" id="levelModal">
+
+  <div class="modal-box level-box">
+
+    <button class="close-modal">
+      ×
+    </button>
+
+    <p class="tag" id="levelTag"></p>
+
+    <h2 id="levelTitle"></h2>
+
+    <p id="levelDescription"></p>
+
+    <div class="stars">
+      ★ ★ ★
+    </div>
+
+  </div>
+
+</div>
+
+
+<footer>
+  © 2026 Jennifer Gabrielli & Marina Melo
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
